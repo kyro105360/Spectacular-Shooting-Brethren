@@ -8,8 +8,8 @@ import pygame
 from random import randint
 
 pygame.init()
-WIDTH  = 800
-HEIGHT = 600
+WIDTH  = 1024
+HEIGHT = 1024
 gameWindow=pygame.display.set_mode((WIDTH,HEIGHT))
 
 BLACK = (  0,  0,  0)
@@ -248,7 +248,7 @@ while playingGame:
     
 
     # PLATFORM properties
-    platformX = [70,0,465,0,465]
+    platformX = [180,0,465,0,465]
     platformY = [GROUND-90,400,300,200,100]
     platformW = [670,120,160,210,135]
     platformH = [50,50,50,50,50]
@@ -276,7 +276,7 @@ while playingGame:
     player1RapidFire = False
     player1Frozen = False
     frozenCounter1 = 0
-    healthBar1X = 450
+    healthBar1X = 576
     healthBar1Y = 10
     healthBar1W = 30
     healthBar1H = 35
@@ -310,7 +310,7 @@ while playingGame:
     player2RapidFire = False
     player2Frozen = False
     frozenCounter2 = 0
-    healthBar2X = 50
+    healthBar2X = 120
     healthBar2Y = 10
     healthBar2W = 30
     healthBar2H = 35
@@ -362,13 +362,13 @@ while playingGame:
     healthApple = pygame.transform.scale(healthApple, (appleW,appleH))
 
     # player1 health bar outline
-    healthBarOutline1X = 450
+    healthBarOutline1X = 576
     healthBarOutline1Y = 10
     healthBarOutline1W = 300
     healthBarOutline1H = 35
 
     # player1 health bar outline
-    healthBarOutline2X = 50
+    healthBarOutline2X = 120
     healthBarOutline2Y = 10
     healthBarOutline2W = 300
     healthBarOutline2H = 35
